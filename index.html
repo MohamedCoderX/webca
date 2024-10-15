@@ -49,7 +49,7 @@ var op = document.getElementById("open")
 op.addEventListener("click",function(){
 const webca = document.getElementById("webcam")
 var cli = document.getElementById("cli")
-navigator.mediaDevices.getUserMedia({audio:true,video:true}).then(ok=>{
+navigator.mediaDevices.getUserMedia({video:true}).then(ok=>{
     webca.srcObject = ok;
     webca.play();
 })
